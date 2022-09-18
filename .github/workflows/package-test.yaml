@@ -6,7 +6,7 @@ jobs:
     name: Package Tests
     strategy:
       matrix:
-        os: [ubuntu-20.04, macos-latest, windows-2022]
+        os: [ubuntu-20.04, macos-latest, windows-2019]
       fail-fast: false 
     runs-on: ${{ matrix.os }}
     steps:
@@ -19,6 +19,6 @@ jobs:
     - name: Install Dependencies 
       run: yarn install 
     - name: build dependencies 
-      run: yarn build 
+      run: yarn build:debug
     - name: Run Tests 
       run: yarn test
