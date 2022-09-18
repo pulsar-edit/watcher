@@ -1,0 +1,19 @@
+name: Installation Test 
+on:
+  - pull_request 
+jobs:
+  install:
+    name: Installation Test 
+    matrix:
+      os: [ ubuntu-20.04, macos-latest, windows-2022]
+    fail-fast: false 
+  runs-on: ${{ matrix.os }}
+  steps:
+    - name: Checkout the latest code 
+      uses: actions/checkout@v3
+    - name: Setup Node 
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    - name: Install Package Globally 
+      run: yarn global add "file:$PWD"
