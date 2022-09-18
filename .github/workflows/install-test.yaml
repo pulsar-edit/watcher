@@ -8,7 +8,7 @@ jobs:
       matrix:
         os: [ubuntu-20.04, macos-latest, windows-2022]
       fail-fast: false 
-  runs-on: ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
   steps:
   - name: Checkout the latest code 
     uses: actions/checkout@v3
