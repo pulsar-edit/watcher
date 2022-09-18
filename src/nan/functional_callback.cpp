@@ -24,7 +24,7 @@ void _noop_callback_helper(const FunctionCallbackInfo<Value> & /*info*/)
 void _fn_callback_helper(const FunctionCallbackInfo<Value> &info)
 {
   Local<ArrayBuffer> cb_array = info.Data().As<ArrayBuffer>();
-  Contents cb_contents = cb_array->GetContents();
+  Contents cb_contents = cb_array->GetBackingStore();
 
   auto *payload = static_cast<intptr_t *>(cb_contents.Data());
   assert(cb_contents.ByteLength() == sizeof(FnCallback *));
