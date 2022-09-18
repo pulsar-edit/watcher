@@ -1,7 +1,7 @@
 {
-  "name": "@atom/watcher",
+  "name": "watcher",
   "version": "1.3.4-0",
-  "description": "Atom filesystem watcher",
+  "description": "Pulsar filesystem watcher",
   "main": "lib/index.js",
   "bin": "lib/cli.js",
   "scripts": {
@@ -28,9 +28,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/atom/watcher.git"
+    "url": "https://github.com/pulsar-edit/watcher.git"
   },
-  "bugs": "https://github.com/atom/watcher/issues",
+  "bugs": "https://github.com/pulsar-edit/watcher/issues",
   "keywords": [
     "filewatch",
     "watcher",
