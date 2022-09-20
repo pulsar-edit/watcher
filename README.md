@@ -1,3 +1,5 @@
+### This Repo is now Archived under Pulsar-Edit because it was an experimental method to replace the existing NSFW File System Watcher. As this is experimental, and the cost to get it working on updated systems is to high, its removal from the Pulsar Core Editor was dicussed on [Discord](https://discord.com/channels/992103415163396136/1021235515275624539/1021440315539869726)
+
 # Atom Filesystem Watcher
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/atom/watcher.svg)](https://greenkeeper.io/)
